@@ -8,20 +8,6 @@
  * @version 1.0
  * @link http://www.abdulibrahim.com/ my home page
  * @todo write at readme ($data_array)
-setAgent('swdwew') to set agent
-setTimeOut()
-setCookieFile()
-setReferer()
-getFile()
-includeHeader() to include header response with the body
-enableVerbose()
-setVerboseFile()
-setMaxRedirections ($max)
-getHeader($file) HEAD method
-postForm () 
-getForm()
-basicAuth () 
-addHeader ()
  */
 class Curl {
     /**

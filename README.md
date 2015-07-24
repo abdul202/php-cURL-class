@@ -1,10 +1,13 @@
 This is an easy to use PHP/cURL class to handle most needed tasks
 #How to use examples
 
-### to download  file
+### To download  file
+```
 $curl = new Curl();
 $curl->getFile('http://www.example.com');
 $curl->file; // this will output the file contents
+
+```
 
 ### post Form data
 include 'curl.class.php';
