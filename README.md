@@ -1,12 +1,16 @@
 This is an easy to use PHP/cURL class to handle most needed tasks
 #How to use examples
 
-### to download  file
+### To download  file
+```
 $curl = new Curl();
 $curl->getFile('http://www.example.com');
 $curl->file; // this will output the file contents
 
+```
+
 ### post Form data
+```
 include 'curl.class.php';
 $curl = new Curl();
 $data_array['code'] = '55445';
@@ -14,18 +18,19 @@ $data_array['session'] = time();
 $data_array['zipcode'] = '52415';
 $data_array['Submit'] = 'Submit';
 $curl->postForm('http://www.webbotsspidersscreenscrapers.com/zip_code_form.php', $data_array);
-
+```
 Every form data field have a name and value you wish to submit
-so the $data_array <b>key<b> is the form field name and array value is set to the field value
+so the $data_array **key** is the form field name and array **value** is set to the field value
 for examples 
 $data_array['zipcode'] = '52415'; 
 ['zipcode']=> form field name '52415'=> form field value
 
 ### to get only header response and the request method is HEAD
+```
 include 'curl.class.php';
 $curl = new Curl();
 $curl->getHeader('http://www.example.com/');
-
+```
 ### Submits a form with the GET method
 include 'curl.class.php';
 $curl = new Curl();
