@@ -66,37 +66,55 @@ $curl->error
 
 ### Options
 the agent name to use instead of the default ( the default is set to Firefox )
+```
 $curl->setAgent()
-
+```
 how long to wait for a response from a server instead of the default ( the default is 25 seconds )
+```
 $curl->setTimeOut()
-
-Location of your cookie file instead of the default ( the default is cookie.txt ) to the script home directory )
+```
+Location of your cookie file instead of the default <br>
+( the default is cookie.txt ) to the script home directory )<br>
+```
+$curl->setCookieFile()
+```
 the path you specify must be relative for example
 if you have a folder named tmp and want the cookie to saved to this folder it will be like that
+```
 $curl->setCookieFile('tmp/cookie.txt')
-$curl->setCookieFile()
-
+```
 the referer to use instead of the default (the default is https://www.google.com)
+```
 $curl->setReferer()
-
+```
 to include response header with the body
+```
 $curl->includeHeader() 
-
+```
 To enable verbose to write more details about the transfer
+```
 $curl->enableVerbose()
-
+```
 To change the location of your Verbose file (the default is verbose.txt ) to the script home directory)
 the path you specify must be relative for example
 if you have a folder named tmp and want the verbose file to saved to this folder it will be like that
+```
 $curl->setVerboseFile('tmp/cookie.txt')
+```
+example
+```
 $curl->setVerboseFile()
-
+```
 To change the max redirections (the default is 4)
+```
 $curl->setMaxRedirections ($max)
-
+```
 An array of HTTP header fields to set
-for example 
-$header_array[] = "Accept-Encoding: compress, gzip";
-Note that it expects to receive data in an array.
+```
 $curl->addHeader ()
+```
+example
+```
+$header_array[] = "Accept-Encoding: compress, gzip";
+```
+Note that it expects to receive data in an array.
