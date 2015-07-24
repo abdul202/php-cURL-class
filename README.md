@@ -24,6 +24,7 @@ so the $data_array **key** is the form field name and array **value** is set to 
 for examples  <br>
 $data_array['zipcode'] = '52415'; <br>
 ['zipcode']=> form field name '52415'=> form field value <br>
+![data_array](https://raw.githubusercontent.com/abdul202/php-cURL-class/master/images/data_arrary.jpg)
 
 
 ### to get only header response and the request method is HEAD
