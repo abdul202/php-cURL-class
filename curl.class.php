@@ -7,7 +7,6 @@
  * @license http://opensource.org/licenses/MIT  The MIT License (MIT)
  * @version 1.0
  * @link http://www.abdulibrahim.com/ my home page
- * @todo write at readme ($data_array)
  */
 class Curl {
     /**
