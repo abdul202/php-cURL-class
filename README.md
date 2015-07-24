@@ -68,14 +68,17 @@ $curl->error
 ```
 
 ### Options
+###### change agent name
 the agent name to use instead of the default ( the default is set to Firefox )
 ```
 $curl->setAgent('your agent name')
 ```
+###### Time out
 how long to wait for a response from a server instead of the default ( the default is 25 seconds )
 ```
 $curl->setTimeOut()
 ```
+###### Cookie location
 Location of your cookie file instead of the default <br>
 ( the default is cookie.txt ) to the script home directory )<br>
 ```
@@ -86,14 +89,17 @@ if you have a folder named tmp and want the cookie to saved to this folder it wi
 ```
 $curl->setCookieFile('tmp/cookie.txt')
 ```
+###### referer
 the referer to use instead of the default (the default is https://www.google.com)
 ```
 $curl->setReferer()
 ```
+###### Include header
 to include response header with the body
 ```
 $curl->includeHeader() 
 ```
+###### Verbose
 To enable verbose which will write more details about the transfer
 ```
 $curl->enableVerbose()
@@ -108,6 +114,7 @@ example
 ```
 $curl->setVerboseFile()
 ```
+###### Redirection limits
 To change the max redirections (the default is 4)
 ```
 $curl->setMaxRedirections ($max)
