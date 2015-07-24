@@ -1,14 +1,14 @@
 This is an easy to use PHP/cURL class to handle most needed tasks
 <hr>
 ### Table of Contents
-**[Installation](#installation)**.
-**[To download file](#download--file)** .
-**[Post Form](#post-form** .
-**[GET form](#get-form)** .
-**[Retrieve Header](#retrieve-header)** .
-**[basic authentication](#basic-authentication)** .
-**[Returned Data](#returned-data)** .
-**[Options](#Options)** .
+**[Installation](#installation)** <br>
+**[To download file](#download--file)** <br>
+**[Post Form](#post-form** <br>
+**[GET form](#get-form)** <br>
+**[Retrieve Header](#retrieve-header)** <br>
+**[basic authentication](#basic-authentication)** <br>
+**[Returned Data](#returned-data)** <br>
+**[Options](#Options)** <br>
 
 #How to examples
 ### Installation
