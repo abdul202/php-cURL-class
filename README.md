@@ -100,7 +100,8 @@ Location of your cookie file instead of the default <br>
 $curl->setCookieFile()
 ```
 the path you specify must be relative for example
-if you have a folder named tmp and want the cookie to saved to this folder it will be like that
+if you have a folder named tmp and want the cookie to saved to this folder it will be like that<br>
+example <br>
 ```php
 $curl->setCookieFile('tmp/cookie.txt')
 ```
