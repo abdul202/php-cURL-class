@@ -1,17 +1,22 @@
 This is an easy to use PHP/cURL class to handle most needed tasks
 <hr>
 ### Table of Contents
+**[Installation](#Installation)**<br>
 **[To download file](#to-download--file)** <br>
 **[Post Form](#post-form-data)** <br>
 **[GET form](#submits-a-form-with-the-get-method)** <br>
-**[Return Header only](#to-get-only-header-response)** <br>
+**[Retrieve Header](#Retrieve-Header)** <br>
 **[basic authentication](#to-login-using-basic-authentication)** <br>
 **[Returned Data](#Returned-Data)** <br>
 **[Options](#Options)** <br>
 
 #How to examples
-
-### To download  file
+### Installation
+To utilize this class, first import curl.class.php into your project, and require it.
+```php
+require_once ('curl.class.php');
+```
+### Download  file
 ```php
 $curl = new Curl();
 $curl->getFile('http://www.example.com');
@@ -19,7 +24,7 @@ $curl->file; // this will contain the fetched file
 
 ```
 
-### post Form data
+### Post Form
 ```php
 include 'curl.class.php';
 $curl = new Curl();
@@ -29,30 +34,29 @@ $data_array['zipcode'] = '52415';
 $data_array['Submit'] = 'Submit';
 $curl->postForm('http://www.webbotsspidersscreenscrapers.com/zip_code_form.php', $data_array);
 ```
-Every form data field have a name and value you wish to submit <br>
-so the $data_array **key** is the form field name and array **value** is set to the field value <br>
-for examples  <br>
-$data_array['zipcode'] = '52415'; <br>
-['zipcode']=> form field name '52415'=> form field value <br>
+so the $data_array **key** is the form field name and array **value** is set to the field value.
+For examples.
+$data_array['zipcode'] = '52415'; .
+['zipcode']=> form field name '52415'=> form field value .
 ![data_array](https://raw.githubusercontent.com/abdul202/php-cURL-class/master/images/data_arrary.jpg)
 
-
-### to get only header response
+### Retrieve Header
 ```php
 include 'curl.class.php';
 $curl = new Curl();
 $curl->getHeader('http://www.example.com/');
 ```
 in this case the request method is HEAD and no body is returned
-### Submits a form with the GET method
-```
+### Get form
+```php
 include 'curl.class.php';
 $curl = new Curl();
 $data_array['term'] = 'games';
 $data_array['sort'] = 'up';
 $curl->getForm('http://www.webbotsspidersscreenscrapers.com/search/search.php', $data_array);
 ```
-### to login using basic authentication
+Submits a form with the GET method
+### Basic authentication
 ```php
 include 'curl.class.php';
 $curl = new Curl();
@@ -61,6 +65,7 @@ $password = 'sp1der3';
 $curl->basicAuth($username, $password);
 $curl->getFile('http://www.webbotsspidersscreenscrapers.com/basic_authentication');
 ```
+To login using basic authentication
 ### Returned Data
 All of these examples will return 3 results <br>
 ##### 1- Contents of the fetched file
