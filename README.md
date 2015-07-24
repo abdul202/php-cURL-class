@@ -2,9 +2,9 @@ This is an easy to use PHP/cURL class to handle most needed tasks
 <hr>
 ### Table of Contents
 **[To download file](#to-download--file)** <br>
-**[post Form](#post-form-data)** <br>
+**[Post Form](#post-form-data)** <br>
+**[GET form](#submits-a-form-with-the-get-method)** <br>
 **[Return Header only](#to-get-only-header-response)** <br>
-**[Submits a form with the GET method](#submits-a-form-with-the-get-method)** <br>
 **[basic authentication](#to-login-using-basic-authentication)** <br>
 **[Returned Data](#Returned-Data)** <br>
 **[Options](#Options)** <br>
