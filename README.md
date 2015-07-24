@@ -121,14 +121,12 @@ $curl->enableVerbose()
 ```
 To change the location of your Verbose file (the default is verbose.txt resides in the script home directory) <br>
 the path you specify must be relative for example<br>
-if you have a folder named tmp and want the verbose file to saved to this folder it will be like that
+if you have a folder named tmp and want the verbose file to saved to this folder it will be like that .
+example .
 ```php
 $curl->setVerboseFile('tmp/cookie.txt')
 ```
-example
-```php
-$curl->setVerboseFile()
-```
+
 ###### Redirection limits
 To change the max redirections (the default is 4)
 ```php
