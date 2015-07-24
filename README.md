@@ -12,7 +12,7 @@ This is an easy to use PHP/cURL class to handle most needed tasks
 #How to examples
 
 ### To download  file
-```
+```php
 $curl = new Curl();
 $curl->getFile('http://www.example.com');
 $curl->file; // this will contain the fetched file
@@ -20,7 +20,7 @@ $curl->file; // this will contain the fetched file
 ```
 
 ### post Form data
-```
+```php
 include 'curl.class.php';
 $curl = new Curl();
 $data_array['code'] = '55445';
