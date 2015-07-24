@@ -40,14 +40,6 @@ For examples.
 $data_array['zipcode'] = '52415'; .
 ['zipcode']=> form field name '52415'=> form field value .
 ![data_array](https://raw.githubusercontent.com/abdul202/php-cURL-class/master/images/data_arrary.jpg)
-
-### Retrieve Header
-```php
-include 'curl.class.php';
-$curl = new Curl();
-$curl->getHeader('http://www.example.com/');
-```
-in this case the request method is HEAD and no body is returned
 ### Get form
 ```php
 include 'curl.class.php';
@@ -57,6 +49,13 @@ $data_array['sort'] = 'up';
 $curl->getForm('http://www.webbotsspidersscreenscrapers.com/search/search.php', $data_array);
 ```
 Submits a form with the GET method
+### Retrieve Header
+```php
+include 'curl.class.php';
+$curl = new Curl();
+$curl->getHeader('http://www.example.com/');
+```
+in this case the request method is HEAD and no body is returned
 ### Basic authentication
 ```php
 include 'curl.class.php';
@@ -82,7 +81,6 @@ it returns a lot of useful information as an associative array
 ```php
 $curl->error 
 ```
-
 ### Options
 ###### change agent name
 the agent name to use instead of the default ( the default is set to Firefox )
