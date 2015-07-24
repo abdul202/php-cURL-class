@@ -137,4 +137,4 @@ example
 ```php
 $header_array[] = "Accept-Encoding: compress, gzip";
 ```
-Note that it expects to receive data in an array.
+Note that it expects to receive data in an array
