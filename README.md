@@ -8,7 +8,7 @@ This is an easy to use PHP/cURL class to handle most needed tasks
 **[Retrieve Header](#retrieve-header)** <br>
 **[basic authentication](#basic-authentication)** <br>
 **[Returned Data](#returned-data)** <br>
-**[Options](#Options)** <br>
+**[Options](#options)** <br>
 
 #How to examples
 ### Installation
