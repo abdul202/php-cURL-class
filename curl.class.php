@@ -1,6 +1,6 @@
 <?php
 /**
- * start working on it 20/7/2015 
+ * @since 20/7/2015 
  * @category  PHP/cURL package 
  * @author Abdul Ibrahim <shuman202@hotmail.com>
  * @copyright 2015 Abdul Ibrahim
