@@ -17,7 +17,9 @@ class Curl {
      * @var string Define how your Agent will appear in server logs
      */
     public $agent = 'Mozilla/5.0 (Windows NT 6.1; rv:18.0) Gecko/20100101 Firefox/18.0';
-    /**
+    /** 
+     * It should contain the maximum time in seconds that you allow the connection phase to the server to take.<br>
+     *  This only limits the connection phase, it has no impact once it has connected.
      * @var int Length of time cURL will wait for a response (seconds)
      */
     public $timeOut = 25 ; // default 25 seconds
@@ -285,9 +287,9 @@ class Curl {
          */
 	curl_setopt($this->ch, CURLOPT_MAXREDIRS, $this->maxRedirs);           
         /**
-         * Timeout as default is set to 25 seconds
+         * Timeout as default is set to 25 seconds use CURLOPT_CONNECTTIMEOUT instead of CURLOPT_TIMEOUT
          */
-        curl_setopt($this->ch, CURLOPT_TIMEOUT, $this->timeOut); 
+        curl_setopt($this->ch, CURLOPT_CONNECTTIMEOUT, $this->timeOut); 
         /**
          * Referer value as default is set https://www.google.com
          */
