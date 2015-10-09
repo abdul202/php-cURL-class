@@ -88,13 +88,15 @@ the agent name to use instead of the default ( the default is set to Firefox )
 $curl->setAgent('your agent name')
 ```
 ###### Time out
-Maximum time in seconds that you allow the whole operation to take (connection + files )
+Maximum time in seconds that you allow the whole operation to take (connection + files ) <br>
+( the default is 25 seconds )
 ```php
 $curl->setTimeOut()
 ```
 ###### Connection Time out
-How long to wait for a response from a server instead of the default ( the default is 25 seconds ) (connection only) <br>
-This only limits the connection phase
+Maximum time in seconds that you allow curl's connection to take instead of the default (connection only) <br>
+This only limits the connection phase <br>
+( the default is 60 seconds )
 ```php
 $curl->setConnectionTimeOut()
 ```
