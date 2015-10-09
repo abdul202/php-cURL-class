@@ -20,9 +20,14 @@ class Curl {
     /** 
      * It should contain the maximum time in seconds that you allow the connection phase to the server to take.<br>
      *  This only limits the connection phase, it has no impact once it has connected.
-     * @var int Length of time cURL will wait for a response (seconds)
+     * @var int Length of time cURL will wait for the entire operation
      */
     public $timeOut = 25 ; // default 25 seconds
+    /**
+     *
+     * @var int Length of time cURL will wait for a response (seconds)  
+     */
+    public $conTimeOut = 60 ; 
     /**
      * @var string Location of your cookie file as default it will be store 
      * in cookie.txt file stored in your script home directory
@@ -287,9 +292,13 @@ class Curl {
          */
 	curl_setopt($this->ch, CURLOPT_MAXREDIRS, $this->maxRedirs);           
         /**
-         * Timeout as default is set to 25 seconds use CURLOPT_CONNECTTIMEOUT instead of CURLOPT_TIMEOUT
+         * Timeout as default is set to 60 seconds for the entire operation
          */
-        curl_setopt($this->ch, CURLOPT_CONNECTTIMEOUT, $this->timeOut); 
+        curl_setopt($this->ch, CURLOPT_TIMEOUT, $this->timeOut);
+        /**
+         * Connection time out for just the connection phase 30 seconds
+         */
+        curl_setopt($this->ch, CURLOPT_CONNECTTIMEOUT, $this->conTimeOut); 
         /**
          * Referer value as default is set https://www.google.com
          */
@@ -344,7 +353,3 @@ class Curl {
         curl_close($this->ch);
     }
 }
-
-
-
-
