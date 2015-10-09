@@ -149,6 +149,13 @@ class Curl {
     }
     /**
     * @access public
+    * @param  $conTimeOut the time out to use instead of the default
+    */     
+    public function setConnectionTimeOut($conTimeOut) {
+        $this->conTimeOut = $conTimeOutt;
+    }    
+    /**
+    * @access public
     * @param  $cookieFile just pass the path relative to your script folder
     */ 
     public function setCookieFile($cookieFile) {
