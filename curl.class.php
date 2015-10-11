@@ -280,6 +280,11 @@ class Curl {
         curl_setopt($this->ch, CURLOPT_URL, $this->target);
         curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, TRUE);
         /**
+	 * wii allow in case there is a redirect to still post the data
+	 * if this not available the request will changed to GET
+	 */
+        curl_setopt($this->ch, CURLOPT_POSTREDIR, 3);  // CURL_REDIR_POST_ALL 301, 302, 303 and any redirect code
+        /**
          * whether or not to include the body. if not the request method is then set to HEAD
          */
         curl_setopt($this->ch, CURLOPT_NOBODY, $this->noBody);       
