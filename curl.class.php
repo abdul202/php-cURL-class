@@ -120,10 +120,7 @@ class Curl {
         * A file name and path to save all internal cookies
         */
         $this->cookieFile = getcwd()."\\cookie.txt";
-        /**
-        * A file name and path to save all verbose data
-        */        
-        $this->verboseFile = fopen(getcwd()."\\verbose.txt", 'w');
+
     }
     /**
      * close the curl session
@@ -189,6 +186,10 @@ class Curl {
     * @access public
     */ 
     public function enableVerbose() {
+        /**
+        * A file name and path to save all verbose data
+        */        
+        $this->verboseFile = fopen(getcwd()."\\verbose.txt", 'w+');
         $this->verbose = TRUE ;
     }
     /**
@@ -197,7 +198,7 @@ class Curl {
      * @example logs/verbose.txt path is relative
     */     
     public function setVerboseFile($verboseFile) {
-        $this->verboseFile = fopen(getcwd()."\\$verboseFile", 'w');
+        $this->verboseFile = $verboseFile;
     }
     /**
     * To change the max redirections 
