@@ -140,6 +140,7 @@ To change the max redirections (the default is 4)
 ```php
 $curl->setMaxRedirections ($max)
 ```
+###### Add Headers
 An array of HTTP header fields to set
 ```php
 $curl->addHeader ()
