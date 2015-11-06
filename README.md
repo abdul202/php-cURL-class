@@ -148,5 +148,6 @@ $curl->addHeader ()
 example
 ```php
 $header_array[] = "Accept-Encoding: compress, gzip";
+$curl->addHeader ($header_array);
 ```
 Note that it expects to receive data in an array
