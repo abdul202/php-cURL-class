@@ -1,6 +1,5 @@
 This is an easy to use PHP/cURL class to handle most needed tasks
 [official website](http://www.abdulibrahim.com/php-curl-class/)
-<hr>
 ### Table of Contents
 **[Installation](#installation)** <br>
 **[To download file](#download--file)** <br>
